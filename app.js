@@ -48,7 +48,6 @@ $(function(){
 		}
 	});
 
-
 	var AppView = Backbone.View.extend({
 		el: $('#container'),
 		events:{
