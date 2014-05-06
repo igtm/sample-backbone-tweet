@@ -27,6 +27,9 @@
     #tweets .destroy:hover {
         background-position: 0 -20px;
     }
+    #error {
+      color: red;
+    }
   </style>
 </head>
 
@@ -39,8 +42,8 @@
       <p>ソース：<a href="https://github.com/igtm/sample-backbone-tweet">https://github.com/igtm/sample-backbone-tweet</a></p>
     </header>
     <div id="content">
-      <label for="name">名前：</label><input type="text" id="name" size="10"/><span class="error"></span><br>
-      <label for="post">投稿：</label><input type="text" id="tweet" size="30"/>
+      <label for="name">名前：</label><input type="text" id="name" placeholder="What's your name??" size="10"/><span id="error"></span><br>
+      <label for="post">投稿：</label><input type="text" id="tweet" placeholder="What would you like to tweet??" size="30"/>
       <ul id="tweets">
         <!-- template .temp-tweets -->
       </ul> 
